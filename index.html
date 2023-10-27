@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Multple-choice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="vertical">
+        <button style="margin: 1em 0em; padding: .5em 0em;">Save</button>
+        <div class="flex">
+          <div class="vertical" style="margin-right: 5em">
+            <label for="main-title" style="font-weight: bold; font-size: large"
+              >Title</label
+            >
+            <input type="text" placeholder="Test" id="main-title" />
+            <h1>Question <span id="question" style="color: red">1</span></h1>
+            <button class="choice" id="A">A</button>
+            <button class="choice" id="B">B</button>
+            <button class="choice" id="C">C</button>
+            <button class="choice" id="D">D</button>
+          </div>
+          <div class="vertical">
+            <div class="tabs" id="answer-type">
+              <button class="tab" id="sheet">Sheet</button>
+              <button class="tab" id="answer">Answer</button>
+            </div>
+            <div style="overflow: auto; max-height: 650px">
+              <table id="choice-table">
+                <tr>
+                  <th>Question</th>
+                  <th>Key</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <button style="padding: 1em; margin: 1em 0em" id="toggle-comparison">
+          View Comparison
+        </button>
+        <h3 id="summary" hidden>
+          Total correct: <span id="correct-num">0</span>/<span id="total-num"
+            >0</span
+          >
+          - Grade: <span id="grade">0</span>
+        </h3>
+        <table hidden id="comparison-table">
+          <tr>
+            <th>Question</th>
+            <th>Choice</th>
+            <th>Answer</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
