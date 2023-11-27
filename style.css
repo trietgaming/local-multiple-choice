@@ -54,7 +54,7 @@ body {
 }
 
 .active {
-  background-color: #86b7fe!important;
+  background-color: #86b7fe !important;
 }
 
 .choice {
@@ -99,10 +99,21 @@ table th {
   color: white;
 }
 
-.correct {
+.correct * {
   background-color: #2ecc71 !important;
+  color: black;
 }
 
-.incorrect {
+.incorrect * {
   background-color: #ff7979 !important;
+  color: black;
+}
+
+.chosen-row:hover {
+  background-color: #ced4da;
+  cursor: pointer;
+}
+
+.pending {
+  background-color: rgb(175, 243, 255) !important;
 }
